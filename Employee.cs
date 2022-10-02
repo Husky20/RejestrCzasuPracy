@@ -10,15 +10,12 @@ namespace RejestrCzasuPracy
         public Employee() { }
         public Employee(string id)
         {
-            idCode = id;
-            days = new List<Day>();
+            Pracownik = id;
+            
         }
-        public string idCode { get; set; }
-        public List<Day> days { get; set; }
+        public string Pracownik { get; set; }
+       
 
-        public void AddToDay(Day d)
-        {
-            this.days.Add(d);
-        }
+        
     }
 }
